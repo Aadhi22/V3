@@ -12,17 +12,19 @@
   text-align: center;
 }
 
+.creative, .photojournal{
+  font-family: 'Special Elite', cursive;
+  background-color:#000000;
+  color: white;
+  text-align: center;
+}
+
 .dp{
   height: 300px;
   width: 300px;
 }
 
-.outerframe{
-  width:100%;
-  height:100%;
-}
-
-.outerframe1{
+.outerframe, .outerframe1, .outerframe2, .outerframe3{
   width:100%;
   height:100%;
 }
@@ -32,7 +34,13 @@
   color: black;
   width: 150px;
   height: auto;
+}
 
+.pj{
+  background-color:#ffffff;
+  color: black;
+  width: 150px;
+  height: auto;
 }
 
 .hobby{
@@ -64,6 +72,17 @@
   display:inline-block;
 }
 
-.photojournal{
-font-family: 'Special Elite', cursive;
+#cr1{
+  display:inline-block;
+}
+#emp{
+  width: auto;
+  height: 30px;
+  display:inline-block;
+}
+
+#photos{
+  width: 250px;
+  height: 250px;
+  display:inline-block;
 }
