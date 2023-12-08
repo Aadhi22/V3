@@ -43,7 +43,7 @@
   height: auto;
 }
 
-.hobby{
+.hobby, .coffee{
   background-color:#ffffff;
   color: black;
   width: 150px;
@@ -83,8 +83,8 @@
 }
 
 #photos{
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   display:inline-block;
 }
 
