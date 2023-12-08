@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.creative, .photojournal{
+.creative, .photojournal, .movierating{
   font-family: 'Special Elite', cursive;
   background-color:#000000;
   color: white;
@@ -36,7 +36,7 @@
   height: auto;
 }
 
-.pj{
+.pj, .mr{
   background-color:#ffffff;
   color: black;
   width: 150px;
@@ -75,6 +75,7 @@
 #cr1{
   display:inline-block;
 }
+
 #emp{
   width: auto;
   height: 30px;
@@ -85,4 +86,10 @@
   width: 250px;
   height: 250px;
   display:inline-block;
+}
+
+#movies{
+    width: 400px;
+    height: 400px;
+    display:inline-block;
 }
