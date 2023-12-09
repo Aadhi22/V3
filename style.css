@@ -14,7 +14,7 @@
   font-size: 30px;
 }
 
-.creative, .photojournal, .movierating{
+.creative, .photojournal, .movierating, .sketches{
   font-family: 'Special Elite', cursive;
   background-color:#000000;
   color: white;
@@ -49,6 +49,14 @@
 }
 
 .mr{
+  background-color:#ffffff;
+  color: black;
+  width: 300px;
+  height: auto;
+  border-radius: 30px
+}
+
+.sk{
   background-color:#ffffff;
   color: black;
   width: 300px;
@@ -114,5 +122,11 @@
 #movies{
     width: 400px;
     height: 400px;
+    display:inline-block;
+}
+
+#sketch{
+    width: 550px;
+    height: 550px;
     display:inline-block;
 }
