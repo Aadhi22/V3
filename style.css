@@ -40,11 +40,20 @@
   border-radius: 30px;
 }
 
-.pj, .mr{
+.pj{
   background-color:#ffffff;
   color: black;
-  width: 150px;
+  width: 300px;
   height: auto;
+  border-radius: 30px;
+}
+
+.mr{
+  background-color:#ffffff;
+  color: black;
+  width: 300px;
+  height: auto;
+  border-radius: 30px
 }
 
 .hobby{
