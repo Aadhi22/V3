@@ -35,8 +35,9 @@
 .resume{
   background-color:#ffffff;
   color: black;
-  width: 150px;
+  width: 230px;
   height: auto;
+  border-radius: 30px;
 }
 
 .pj, .mr{
@@ -46,11 +47,21 @@
   height: auto;
 }
 
-.hobby, .coffee{
+.hobby{
   background-color:#ffffff;
   color: black;
-  width: 150px;
+  width: 200px;
   height: auto;
+  border-radius: 30px;
+
+}
+
+.coffee{
+  background-color:#ffffff;
+  color: black;
+  width: 250px;
+  height: auto;
+  border-radius: 30px;
 
 }
 
