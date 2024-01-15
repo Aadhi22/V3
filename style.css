@@ -119,6 +119,10 @@
   display:inline-block;
 }
 
+#y2022, #y2021{
+  display: block;
+}
+
 #movies{
     width: 400px;
     height: 400px;
