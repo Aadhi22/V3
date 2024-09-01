@@ -14,7 +14,7 @@
   font-size: 30px;
 }
 
-.creative, .photojournal, .movierating, .sketches{
+.creative, .photojournal, .movierating, .sketches, .movieslink{
   font-family: 'Special Elite', cursive;
   background-color:#000000;
   color: white;
@@ -79,7 +79,14 @@
   width: 250px;
   height: auto;
   border-radius: 30px;
+}
 
+.mash{
+  background-color:#ffffff;
+  color: black;
+  width: 600px;
+  height: auto;
+  border-radius: 30px;
 }
 
 .options{
@@ -133,4 +140,70 @@
     width: 550px;
     height: 550px;
     display:inline-block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#cap{
+  font-size: 15px;
+}
+
+#myInput {
+  background-image: url('D:\New Projects\5. Websites\Own\Dev\assets\img\filtericon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 10%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header{
+  background-color: #D22B2B;
+}
+#myTable td:hover {
+  background-color: #7F00FF;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
 }
