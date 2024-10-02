@@ -11,12 +11,20 @@
   </head>
   <body class="movieslink">
     Movie Ratings - Count : 171<Br>
-      <div id="cap"><i>Time travel is not possible yet,hence am travelling through cinema...</i></div>
+      <div id="cap"><i>Time travel is not possible yet, hence am travelling through cinema...</i></div>
     <script type="text/javascript" src="script.js"></script>
     <br>
     <div class="outerframe">
       <div class="back">
-        <!--<input type="text" id="myInputyear" onkeyup="Filteryear()" placeholder="Filter for Year" title="Type in a name">-->
+        <input type="text" id="myInputyear" onkeyup="Filteryear()" placeholder="Filter for Year" title="Type in a name" >
+        <input type="text" id="myInputmovie" onkeyup="Filtermovie()" placeholder="Filter for Movie Name" title="Type in a name" >
+        <input type="text" id="myInputlang" onkeyup="Filterlang()" placeholder="Filter for Language" title="Type in a name" >
+        <input type="text" id="myInputrate" onkeyup="Filterrate()" placeholder="Filter for Rating" title="Type in a name" >
+        <input type="text" id="myInputprint" onkeyup="Filterprint()" placeholder="Filter for Availability" title="Type in a name" >
+      <br><br>
+      <div id="cap"><i>Please use one search filter at one time to get desired result :)</i></div>
+      <br>
+
 <table id="myTable">
   <tr class="header">
     <th style="width:5%;">Year</th>
