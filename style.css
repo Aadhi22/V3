@@ -154,7 +154,7 @@
   font-size: 15px;
 }
 
-#myInput {
+#myInputyear, #myInputlang, #myInputmovie, #myInputprint, #myInputrate {
   background-image: url('D:\New Projects\5. Websites\Own\Dev\assets\img\filtericon.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
