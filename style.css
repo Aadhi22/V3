@@ -159,10 +159,43 @@
   font-size: 15px;
 }
 
-#myInputyear, #myInputlang, #myInputmovie, #myInputprint, #myInputrate {
-  background-image: url('D:\New Projects\5. Websites\Own\Dev\assets\img\filtericon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
+#myInputyear{
+  border-radius: 55px;
+  width: 5%;
+  font-size: 20px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myInputlang{
+  border-radius: 55px;
+  width: 10%;
+  font-size: 20px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myInputmovie{
+  border-radius: 55px;
+  width: 35%;
+  font-size: 20px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myInputprint{
+  border-radius: 55px;
+  width: 20%;
+  font-size: 20px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myInputrate {
+  border-radius: 55px;
   width: 20%;
   font-size: 20px;
   padding: 12px 20px 12px 40px;
