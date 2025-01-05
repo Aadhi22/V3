@@ -159,7 +159,7 @@
 }
 
 #send{
-  width: 7%;
+  width: 20%;
   border-radius: 30px;
   padding: 12px 20px 12px 20px;
   background-color: aqua;
@@ -167,7 +167,7 @@
 
 #movieondemand{
   border-radius: 30px;
-  width: 15%;
+  width: 25%;
   font-size: 20px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
