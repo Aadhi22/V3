@@ -95,6 +95,15 @@ function Filterrate() {
   }
 }
 
+function askmovie() {
+  var movieinput, movievalue, whatsapplink;
+  movieinput = document.getElementById("movieondemand");
+  movievalue = movieinput.value;
+  whatsapplink = 'https://wa.me/?text=' + 'Please send ' + encodeURIComponent(movievalue);
+  window.open(whatsapplink, '_blank');
+  movieinput.value="";
+}
+
 
 function Filterprint() {
   var input, filter, table, tr, td, i, txtValue;
