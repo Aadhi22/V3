@@ -99,9 +99,15 @@ function askmovie() {
   var movieinput, movievalue, whatsapplink;
   movieinput = document.getElementById("movieondemand");
   movievalue = movieinput.value;
-  whatsapplink = 'https://wa.me/?text=' + 'Please send ' + encodeURIComponent(movievalue);
-  window.open(whatsapplink, '_blank');
-  movieinput.value="";
+  if (movievalue.length === 0) {
+    alert("Enter Movie name and year")
+  }
+  else {
+    whatsapplink = 'https://wa.me/918526734744/?text=' + 'Please send ' + encodeURIComponent(movievalue);
+    window.open(whatsapplink, '_blank');
+    movieinput.value="";
+  }
+
 }
 
 
