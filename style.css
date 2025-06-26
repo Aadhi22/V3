@@ -153,6 +153,10 @@
 * {
   box-sizing: border-box;
 }
+#top5{
+  font-size: 15px;
+  text-decoration-color: Blue;
+}
 
 #cap{
   font-size: 15px;
@@ -216,6 +220,26 @@
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
+}
+
+#mytoptable {
+  border-collapse: collapse;
+  width: 50%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#mytoptable th, #mytoptable td {
+  text-align: left;
+  padding: 5px;
+}
+
+#mytoptable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#mytoptable tr.header{
+  background-color: #D22B2B;
 }
 
 #myTable {

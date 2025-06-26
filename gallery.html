@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Journal</title>
+  <link href="gallerystyle.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=PT+Serif&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script type="text/javascript" src="galleryscript.js"></script>
+  <br>
+    <div class="title">
+      Photos - Count : 20
+    </div>
+  <div class="gallery">
+    <!-- Thumbnails in /thumbnails/ folder -->
+    <img src="assets/img/photojournal/thumbnails/11.jpg" alt="Photo 11" />
+    <img src="assets/img/photojournal/thumbnails/10.jpg" alt="Photo 10" />
+    <img src="assets/img/photojournal/thumbnails/9.jpg" alt="Photo 9" />
+    <img src="assets/img/photojournal/thumbnails/8.jpg" alt="Photo 8" />
+    <img src="assets/img/photojournal/thumbnails/7.jpg" alt="Photo 7" />
+    <img src="assets/img/photojournal/thumbnails/6.jpg" alt="Photo 6" />
+    <img src="assets/img/photojournal/thumbnails/14.jpg" alt="Photo 14" />
+    <img src="assets/img/photojournal/thumbnails/19.jpg" alt="Photo 19" />
+    <img src="assets/img/photojournal/thumbnails/13.jpg" alt="Photo 13" />
+    <img src="assets/img/photojournal/thumbnails/12.jpg" alt="Photo 12" />
+    <img src="assets/img/photojournal/thumbnails/15.jpg" alt="Photo 15" />
+    <img src="assets/img/photojournal/thumbnails/18.jpg" alt="Photo 18" />
+    <img src="assets/img/photojournal/thumbnails/3.jpg" alt="Photo 3" />
+    <img src="assets/img/photojournal/thumbnails/4.jpg" alt="Photo 4" />
+    <img src="assets/img/photojournal/thumbnails/17.jpg" alt="Photo 17" />
+    <img src="assets/img/photojournal/thumbnails/2.jpg" alt="Photo 2" />
+    <img src="assets/img/photojournal/thumbnails/16.jpg" alt="Photo 16" />
+    <img src="assets/img/photojournal/thumbnails/5.jpg" alt="Photo 5" />
+    <img src="assets/img/photojournal/thumbnails/1.jpg" alt="Photo 1" />
+    <img src="assets/img/photojournal/thumbnails/20.jpg" alt="Photo 20" />
+  </div>
+
+  <!-- Lightbox container -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <img src="" alt="Enlarged Photo" id="lightboxImg" />
+  </div>
+
+  <script>
+  const gallery = document.querySelector('.gallery');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const closeBtn = document.getElementById('closeBtn');
+
+  gallery.addEventListener('click', e => {
+    if (e.target.tagName === 'IMG') {
+      // Extract filename from thumbnail src
+      const thumbSrc = e.target.src;
+      const filename = thumbSrc.substring(thumbSrc.lastIndexOf('/') + 1);
+
+      // Construct large image src path (e.g., /large/ folder)
+      const largeSrc = thumbSrc.replace('/thumbnails/', '/large/');
+
+      lightboxImg.src = largeSrc;
+      lightboxImg.alt = e.target.alt || '';
+      lightbox.classList.add('active');
+    }
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+    lightboxImg.src = '';
+  });
+
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove('active');
+      lightboxImg.src = '';
+    }
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+      lightbox.classList.remove('active');
+      lightboxImg.src = '';
+    }
+  });
+
+  </script>
+
+</body>
+</html>
